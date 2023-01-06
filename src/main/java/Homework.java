@@ -1,14 +1,33 @@
 public class Homework {
 
 
+
     /*
+     * Problem:- 11. Given a string and a non-negative int n, return a larger string
+     * that is n copies of the original string. Example below : stringTimes("Hi", 2)
+     * → "HiHi" stringTimes("Hi", 3) → "HiHiHi" stringTimes("Hi", 1) → "Hi"
+     */
+    public String eleven(){
+        String originalString ="Hi";
+        int givenNumber = 3;
+        String newString="";
+        for(int i=0;i<givenNumber;i++){
+        newString = newString+originalString;// Hi
+
+        }
+        return newString ;
+
+    }
+    /*
+
+
      * Problem:-12 Given a string, we'll say that the front is the first 3 chars of
      * the string, If the string length is less than 3, the front is whatever is
      * there, Return a new string which is 3 copies of the front. Example below :
      * front3("Java") → "JavJavJav" front3("Chocolate") → "ChoChoCho" front3("abc")
      * → "abcabcabc"
      */
-    public void eleven () {
+    public void twelve () {
         String ss = "Chocolate";
         int l = ss.length();
         System.out.println(l);
@@ -75,14 +94,29 @@ public class Homework {
 
         }
 
+    //task:
+    int x = 10;
+    int y = 5;
+    public void main(){
+        int z = x;
+        x=y;
+        y =z;
+        System.out.println(y);
+        System.out.println(x);
+
+    }
         public static void main (String[]args){
             Homework ht = new Homework();
             ht.eleven();
             ht.thirteen();
             System.out.println(ht.fourteenTwo());
             ht.sixteen();
-
+            ht.main();
         }
+
+
+
+
     }
 
 
